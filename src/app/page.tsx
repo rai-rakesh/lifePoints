@@ -99,20 +99,39 @@ export default function Home() {
                 </div>
             </header>
 
-            <div className="task-list">
-                {TASKS.map((task, index) => (
-                    <button
-                        key={task.id}
-                        className={`card ${task.points > 0 ? 'positive' : 'negative'} animate-slide-in`}
-                        style={{ animationDelay: `${index * 0.1}s`, width: '100%' }}
-                        onClick={() => handleTaskClick(task)}
-                    >
-                        <span style={{ fontSize: '1.1rem', fontWeight: 600 }}>{task.label}</span>
-                        <span className={`points-badge ${task.points > 0 ? 'points-positive' : 'points-negative'}`}>
-                            {task.points > 0 ? '+' : ''}{task.points}
-                        </span>
-                    </button>
-                ))}
+            <div className="task-columns">
+                <div className="task-column">
+                    <h2 className="column-title positive-title">Positive Habits</h2>
+                    {TASKS.filter(t => t.points > 0).map((task, index) => (
+                        <button
+                            key={task.id}
+                            className="card positive animate-slide-in"
+                            style={{ animationDelay: `${index * 0.1}s`, width: '100%' }}
+                            onClick={() => handleTaskClick(task)}
+                        >
+                            <span style={{ fontSize: '1rem', fontWeight: 600, color: 'white', textAlign: 'left', flex: 1, wordWrap: 'break-word' }}>{task.label}</span>
+                            <span className="points-badge points-positive">
+                                +{task.points}
+                            </span>
+                        </button>
+                    ))}
+                </div>
+                <div className="task-column">
+                    <h2 className="column-title negative-title">Negative Habits</h2>
+                    {TASKS.filter(t => t.points < 0).map((task, index) => (
+                        <button
+                            key={task.id}
+                            className="card negative animate-slide-in"
+                            style={{ animationDelay: `${index * 0.1}s`, width: '100%' }}
+                            onClick={() => handleTaskClick(task)}
+                        >
+                            <span style={{ fontSize: '1rem', fontWeight: 600, color: 'white', textAlign: 'left', flex: 1, wordWrap: 'break-word' }}>{task.label}</span>
+                            <span className="points-badge points-negative">
+                                {task.points}
+                            </span>
+                        </button>
+                    ))}
+                </div>
             </div>
         </main>
     );
