@@ -9,8 +9,8 @@ type Task = {
 };
 
 const TASKS: Task[] = [
-    { id: 1, label: 'Practice Guitar Strumming', points: 7 },
-    { id: 2, label: 'Practice Guitar Fingerstyle', points: 10 },
+    { id: 1, label: 'Practice Guitar Strumming 30 min', points: 7 },
+    { id: 2, label: 'Practice Guitar Fingerstyle 30 min', points: 10 },
     { id: 3, label: 'Reading 10 pages of a book', points: 5 },
     { id: 4, label: 'Play 3 PUBG games', points: -20 },
     { id: 5, label: 'Random scrolling 30 min', points: -15 },
@@ -20,6 +20,8 @@ const TASKS: Task[] = [
     { id: 9, label: 'NPF', points: -30 },
     { id: 10, label: 'Random YT video for 30 min', points: -15 },
     { id: 11, label: '1 Usefull YT video', points: 8 },
+    { id: 12, label: 'Vibe coding on a project', points: 10 },
+    { id: 13, label: 'Read / Work on AI for 40 min', points: 12 },
 ];
 
 export default function Home() {
