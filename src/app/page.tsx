@@ -14,7 +14,12 @@ const TASKS: Task[] = [
     { id: 3, label: 'Reading 10 pages of a book', points: 5 },
     { id: 4, label: 'Play 3 PUBG games', points: -20 },
     { id: 5, label: 'Random scrolling 30 min', points: -15 },
-    { id: 6, label: 'Tech Course', points: 15 },
+    { id: 6, label: 'Complete a 30 min lecture', points: 10 },
+    { id: 7, label: 'Learn chess for 30 min', points: 15 },
+    { id: 8, label: 'Medidate / Write Thoughts for 30 min', points: 15 },
+    { id: 9, label: 'NPF', points: -30 },
+    { id: 10, label: 'Random YT video for 30 min', points: -15 },
+    { id: 11, label: '1 Usefull YT video', points: 8 },
 ];
 
 export default function Home() {
@@ -109,7 +114,7 @@ export default function Home() {
                             style={{ animationDelay: `${index * 0.1}s`, width: '100%' }}
                             onClick={() => handleTaskClick(task)}
                         >
-                            <span style={{ fontSize: '1rem', fontWeight: 600, color: 'white', textAlign: 'left', flex: 1, wordWrap: 'break-word' }}>{task.label}</span>
+                            <span style={{ fontSize: '1.1rem', fontWeight: 600, color: 'white', textAlign: 'left' }}>{task.label}</span>
                             <span className="points-badge points-positive">
                                 +{task.points}
                             </span>
@@ -125,7 +130,7 @@ export default function Home() {
                             style={{ animationDelay: `${index * 0.1}s`, width: '100%' }}
                             onClick={() => handleTaskClick(task)}
                         >
-                            <span style={{ fontSize: '1rem', fontWeight: 600, color: 'white', textAlign: 'left', flex: 1, wordWrap: 'break-word' }}>{task.label}</span>
+                            <span style={{ fontSize: '1.1rem', fontWeight: 600, color: 'white', textAlign: 'left' }}>{task.label}</span>
                             <span className="points-badge points-negative">
                                 {task.points}
                             </span>
