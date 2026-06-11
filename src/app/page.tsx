@@ -16,7 +16,7 @@ const TASKS: Task[] = [
     { id: 5, label: 'Random scrolling 30 min', points: -15 },
     { id: 6, label: 'Complete a 40 min lecture', points: 12 },
     { id: 7, label: 'Learn chess for 20 min', points: 10 },
-    { id: 8, label: 'Medidate / Write Thoughts for 20 min', points: 15 },
+    { id: 8, label: 'Medidate / useful yt for 20 min', points: 15 },
     { id: 9, label: 'NPF', points: -50 },
     { id: 10, label: 'Random YT video for 30 min', points: -15 },
     { id: 11, label: 'Gym', points: 5 },
@@ -26,6 +26,7 @@ const TASKS: Task[] = [
     { id: 15, label: '1 RC game', points: -15 },
     { id: 16, label: 'Night Schedule', points: 8 },
     { id: 17, label: 'Bathroom cleaning', points: 12 },
+    { id: 18, label: 'Drink 1L water', points: 5 },
 ];
 
 export default function Home() {
