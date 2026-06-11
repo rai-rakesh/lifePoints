@@ -25,6 +25,7 @@ const TASKS: Task[] = [
     { id: 14, label: 'Guitar Practice', points: 10 },
     { id: 15, label: '1 RC game', points: -15 },
     { id: 16, label: 'Night Schedule', points: 8 },
+    { id: 17, label: 'Bathroom cleaning', points: 12 },
 ];
 
 export default function Home() {
