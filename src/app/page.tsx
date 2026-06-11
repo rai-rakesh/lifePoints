@@ -9,19 +9,22 @@ type Task = {
 };
 
 const TASKS: Task[] = [
-    { id: 1, label: 'Practice Guitar Strumming 30 min', points: 7 },
-    { id: 2, label: 'Practice Guitar Fingerstyle 30 min', points: 10 },
-    { id: 3, label: 'Reading 10 pages of a book', points: 5 },
-    { id: 4, label: 'Play 3 PUBG games', points: -20 },
+    { id: 1, label: 'Practice Guitar Strumming 30 min', points: 10 },
+    { id: 2, label: 'Practice Guitar Fingerstyle 30 min', points: 15 },
+    { id: 3, label: 'Reading for 20 min', points: 8 },
+    { id: 4, label: '4 BGMI matches', points: -20 },
     { id: 5, label: 'Random scrolling 30 min', points: -15 },
-    { id: 6, label: 'Complete a 30 min lecture', points: 10 },
-    { id: 7, label: 'Learn chess for 30 min', points: 15 },
-    { id: 8, label: 'Medidate / Write Thoughts for 30 min', points: 15 },
-    { id: 9, label: 'NPF', points: -30 },
+    { id: 6, label: 'Complete a 40 min lecture', points: 12 },
+    { id: 7, label: 'Learn chess for 20 min', points: 10 },
+    { id: 8, label: 'Medidate / Write Thoughts for 20 min', points: 15 },
+    { id: 9, label: 'NPF', points: -50 },
     { id: 10, label: 'Random YT video for 30 min', points: -15 },
-    { id: 11, label: '1 Usefull YT video', points: 8 },
-    { id: 12, label: 'Vibe coding on a project', points: 10 },
-    { id: 13, label: 'Read / Work on AI for 40 min', points: 12 },
+    { id: 11, label: 'Gym', points: 5 },
+    { id: 12, label: 'Vibe coding on a project for 40 min', points: 15 },
+    { id: 13, label: 'Cold face wash', points: 5 },
+    { id: 14, label: 'Guitar Practice', points: 10 },
+    { id: 15, label: '1 RC game', points: -15 },
+    { id: 16, label: 'Night Schedule', points: 8 },
 ];
 
 export default function Home() {
