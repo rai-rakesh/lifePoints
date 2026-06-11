@@ -21,7 +21,7 @@ const TASKS: Task[] = [
     { id: 10, label: 'Random YT video for 30 min', points: -15 },
     { id: 11, label: 'Gym', points: 5 },
     { id: 12, label: 'Vibe coding on a project for 40 min', points: 15 },
-    { id: 13, label: 'Cold face wash', points: 5 },
+    { id: 13, label: 'Morning Schedule (Bed + table + cold face wash)', points: 8 },
     { id: 14, label: 'Guitar Practice', points: 10 },
     { id: 15, label: '1 RC game', points: -15 },
     { id: 16, label: 'Night Schedule', points: 8 },
